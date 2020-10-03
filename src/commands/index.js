@@ -1,12 +1,20 @@
 const uptime = require('./uptime');
 const crew = require('./crew');
 const imposter = require('./imposter');
+const gamer = require('./gamer');
+const impCarry = require('./imposter-carry');
+const crewCarry = require('./crew-carry');
+const stats = require('./stats');
 
 let descriptions = '';
 const commands = [
   uptime,
   crew,
-  imposter
+  imposter,
+  gamer,
+  impCarry,
+  crewCarry,
+  stats
 ].reduce((all, cmd) => {
   cmd.triggers.forEach(trigger => all[trigger] = cmd.handler);
   descriptions += `**${cmd.name}** - ${cmd.description}
