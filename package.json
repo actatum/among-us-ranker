@@ -1,0 +1,31 @@
+{
+  "name": "among-us-ranker",
+  "version": "1.0.0",
+  "description": "Ranking best and worst among us players in our god forsaken discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actatum/among-us-ranker.git"
+  },
+  "author": "Aaron Tatum",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/actatum/among-us-ranker/issues"
+  },
+  "homepage": "https://github.com/actatum/among-us-ranker#readme",
+  "dependencies": {
+    "countdown": "^2.6.0",
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0",
+    "easy-table": "^1.1.1",
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0"
+  }
+}
