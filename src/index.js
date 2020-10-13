@@ -18,6 +18,7 @@ client.once('ready', async () => {
   console.log('among us ranker bot started!');
 });
 
+// message listener
 client.on('message', async (msg) => {
   const { guild, channel } = msg;
   if (msg.author.bot || channel.type === 'dm') return;
