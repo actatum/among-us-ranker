@@ -11,6 +11,7 @@ const imposter = require('./db/imposter');
 const guildID = process.env.GUILD_ID;
 const channelID = process.env.CHANNEL_ID;
 
+// setup (create tables if they don't exist)
 client.once('ready', async () => {
   await crew.table();
   await imposter.table();
